@@ -11,7 +11,7 @@ class Seller extends User
 {
     use HasFactory;
 
-    public function product() {
+    public function products() {
         return $this->hasMany(Product::class);
     }
 }
