@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use App\Models\Category;
+use App\Models\Seller;
+use App\Models\Transaction;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -25,5 +28,17 @@ class Product extends Model
 
     public function isAvailable() {
         return $this->status === self::AVAILABLE_PRODUCT;
+    }
+
+    public function categories() {
+        return $this->belongsToMany(Category::class);
+    }
+
+    public function seller() {
+        return $this->belongsTo(Seller::class);
+    }
+
+    public function transaction() {
+        return $this->hasMany(Transaction::class);
     }
 }
