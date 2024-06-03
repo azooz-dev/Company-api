@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->integer('quantity')->unsigned();
+            $table->foreignId('buyer_id')->references('id')->on('users');
+            $table->foreignId('product_id')->references('id')->on('products');
             $table->timestamps();
         });
     }
