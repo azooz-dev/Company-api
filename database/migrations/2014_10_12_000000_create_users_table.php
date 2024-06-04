@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('verified', ['1', '0'])->default(User::UNVERIFIED_USER);
             $table->string('verification_token')->nullable();
             $table->string('password');
+            $table->string('admin')->default(User::REGULAR_USER);
             $table->rememberToken();
             $table->timestamps();
         });

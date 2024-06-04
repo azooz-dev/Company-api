@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -23,7 +24,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:8|confirmed',
+        ]);
+
+        $data['password'] = Hash::make($data['password']);
+        $data['verified'] = User::UNVERIFIED_USER;
+        $data['verification_token'] = User::generateTokenString();
+
+        $data['admin'] = User::REGULAR_USER;
+
+        $user = User::create($data);
+
+        return response()->json(['data' => $user], 201);
     }
 
     /**
