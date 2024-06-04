@@ -21,10 +21,8 @@ class BuyerController extends ApiController
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Buyer $buyer)
     {
-        $buyer = Buyer::has('transactions')->findOrFail($id);
-
         return response()->json(['data' => $buyer], 200);
     }
 }
