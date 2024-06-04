@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('status')->default(Product::UNAVAILABLE_PRODUCT);
             $table->foreignId('seller_id')->references('id')->on('users');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
