@@ -2,11 +2,14 @@
 
 namespace App\Exceptions;
 
+use App\Traits\ApiResponser;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
+    use ApiResponser;
     /**
      * A list of exception types with their corresponding custom log levels.
      *
@@ -44,5 +47,28 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    /**
+     * Render an exception into an HTTP response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Throwable  $exception
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function render($request, Throwable $exception) {
+        // Check if the exception is an instance of ValidationException
+        if ($exception instanceof ValidationException) {
+            // Customize the validation exception response
+
+            // Get the validation errors from the exception
+            $errors = $exception->errors();
+
+            // Return the error response with the validation errors and the appropriate HTTP status code
+            return $this->errorResponse($errors, 422);
+        }
+
+        // Return the default response for the exception
+        return parent::render($request, $exception);
     }
 }
