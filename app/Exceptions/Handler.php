@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use App\Traits\ApiResponser;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
 use Throwable;
@@ -66,6 +67,12 @@ class Handler extends ExceptionHandler
 
             // Return the error response with the validation errors and the appropriate HTTP status code
             return $this->errorResponse($errors, 422);
+        }
+
+        if ($exception instanceof ModelNotFoundException) {
+            $modelName = strtolower(class_basename($exception->getModel()));
+
+            return $this->errorResponse('Does not exists any '. $modelName . ' with the specified identification', 404);
         }
 
         // Return the default response for the exception
