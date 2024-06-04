@@ -64,52 +64,56 @@ class Handler extends ExceptionHandler
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function render($request, Throwable $exception) {
-        // Check if the exception is an instance of ValidationException
+        // Customize the validation exception response
         if ($exception instanceof ValidationException) {
-            // Customize the validation exception response
-
-            // Get the validation errors from the exception
-            $errors = $exception->errors();
-
-            // Return the error response with the validation errors and the appropriate HTTP status code
-            return $this->errorResponse($errors, 422);
+            return $this->errorResponse($exception->errors(), 422);
         }
 
+        // Return the error response for model not found exception
         if ($exception instanceof ModelNotFoundException) {
             $modelName = strtolower(class_basename($exception->getModel()));
-
-            return $this->errorResponse('Does not exists any '. $modelName . ' with the specified identification', 404);
+            return $this->errorResponse("Does not exists any {$modelName} with the specified identification", 404);
         }
 
+        // Return the error response for authentication exception
         if ($exception instanceof AuthenticationException) {
             return $this->errorResponse('Unauthenticated', 401);
         }
 
+        // Return the error response for authorization exception
         if ($exception instanceof AuthorizationException) {
             return $this->errorResponse($exception->getMessage(), 403);
         }
 
+        // Return the error response for not found exception
         if ($exception instanceof NotFoundHttpException) {
-            return $this->errorResponse("The specified URL cannot be found.", 404);
+            return $this->errorResponse('The specified URL cannot be found.', 404);
         }
 
+        // Return the error response for method not allowed exception
         if ($exception instanceof MethodNotAllowedHttpException) {
-            return $this->errorResponse("The specified method for the request invalid.", 405);
+            return $this->errorResponse('The specified method for the request is invalid.', 405);
         }
 
+        // Return the error response for http exception
         if ($exception instanceof HttpException) {
             return $this->errorResponse($exception->getMessage(), $exception->getStatusCode());
         }
 
+        // Return the error response for query exception
         if ($exception instanceof QueryException) {
             $errorCode = $exception->errorInfo[1];
-
             if ($errorCode == 1451) {
-                return $this->errorResponse("Cannot remove this resource permanently. It is related with any other resource.", 409);
+                return $this->errorResponse('Cannot remove this resource permanently. It is related with any other resource.', 409);
             }
         }
 
-        // Return the default response for the exception
-        return parent::render($request, $exception);
+        // Return the default response for the exception if app is in debug mode
+        if (config('app.debug')) {
+            return parent::render($request, $exception);
+        }
+
+        // Return the generic error response for other exceptions
+        return $this->errorResponse('Something went wrong. Please try again later.', 500);
     }
 }
