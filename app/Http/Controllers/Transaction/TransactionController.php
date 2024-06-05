@@ -8,7 +8,6 @@ use App\Traits\ApiResponser;
 
 class TransactionController extends ApiController
 {
-    use ApiResponser;
     /**
      * Display a listing of the resource.
      */

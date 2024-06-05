@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class CategoryController extends ApiController
 {
-    use ApiResponser;
     /**
      * Display a listing of the resource.
      */
