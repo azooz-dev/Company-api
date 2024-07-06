@@ -12,7 +12,7 @@ class CategoryProductController extends ApiController
      */
     public function index(Category $category)
     {
-        $products = $category->products()->get()->makeHidden('pivot');
+        $products = $category->products()->get();
 
         return $this->showAll($products, 200);
     }
