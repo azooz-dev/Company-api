@@ -26,6 +26,7 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'verified' => fake()->randomElement([User::VERIFIED_USER, User::UNVERIFIED_USER]),
             'verification_token' => User::generateTokenString(),
+            'admin' => fake()->randomElement([User::ADMIN_USER, User::REGULAR_USER])
         ];
     }
 
