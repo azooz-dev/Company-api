@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Product;
 
+use App\Events\ProductOutOfStockEvent;
 use App\Http\Controllers\ApiController;
 use App\Models\Buyer;
 use App\Models\Product;
@@ -42,6 +43,7 @@ class ProductBuyerTransactionController extends ApiController
                 'product_id' => $product->id,
                 'buyer_id' => $data['buyer_id']
             ]);
+            event(new ProductOutOfStockEvent($product));
             return $this->showOne($transaction, 201);
         });
     }
