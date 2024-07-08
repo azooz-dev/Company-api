@@ -6,6 +6,7 @@ use App\Http\Controllers\ApiController;
 use App\Models\Product;
 use App\Models\Seller;
 use App\Models\User;
+use Illuminate\Contracts\Cache\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -76,8 +77,8 @@ class SellerProductController extends ApiController
         }
 
         if ($request->hasFile('image')) {
-            if (Storage::exists('products/' . $product->image)) {
-                Storage::delete('products/' . $product->image);
+            if (Storage::exists('public/products/' . $product->image)) {
+                Storage::delete('public/products/' . $product->image);
             }
 
             $product->image = $this->storeImage($request, $request->image, 'products');
@@ -100,6 +101,9 @@ class SellerProductController extends ApiController
         $this->checkSeller($seller, $product);
 
         $product->delete();
+        if (Storage::exists('public/products/' . $product->image)) {
+            Storage::delete('public/products/' . $product->image);
+        }
 
         return $this->showOne($product);
     }
