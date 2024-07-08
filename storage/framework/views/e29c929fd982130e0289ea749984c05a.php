@@ -1,0 +1,2 @@
+<p>Please confirm your email address by clicking on the link below:</p>
+<button><a href="<?php echo e(route('users.verify', $user->verification_token)); ?>">Click</a></button><?php /**PATH C:\xampp\htdocs\company-api\resources\views/email/resend-email-verification.blade.php ENDPATH**/ ?>

@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Events\ProductOutOfStockEvent;
+use App\Events\UserCreated;
+use App\Listeners\SendEmailVerification;
 use App\Listeners\UpdateProductStatusListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -22,6 +24,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         ProductOutOfStockEvent::class => [
             UpdateProductStatusListener::class,
+        ],
+        UserCreated::class => [
+            SendEmailVerification::class,
         ],
     ];
 
