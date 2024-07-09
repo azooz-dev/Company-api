@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Category;
 use App\Models\Seller;
 use App\Models\Transaction;
+use App\Transformers\Product\ProductTransformer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -15,6 +16,7 @@ class Product extends Model
 
     protected $date = ['deleted_at'];
     protected $hidden = ['pivot'];
+    public $transformer = ProductTransformer::class;
 
     const AVAILABLE_PRODUCT = 'available';
     const UNAVAILABLE_PRODUCT = 'unavailable';
