@@ -4,6 +4,7 @@ namespace App\Traits;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 trait ApiResponser {
     private function successResponse($data, $code) {
@@ -22,7 +23,7 @@ trait ApiResponser {
         }
         $transformer = $collection->first()->transformer;
 
-        $collection  = $this->transformData($this->sortData($this->filterData($collection, $transformer), $transformer), $transformer);
+        $collection = $this->transformData($this->pagination($this->sortData($this->filterData($collection, $transformer), $transformer)), $transformer);
         return $this->successResponse($collection, $code);
     }
 
@@ -51,6 +52,28 @@ trait ApiResponser {
         }
 
         return $collection;
+    }
+
+    protected function pagination(Collection $collection) {
+        request()->validate([
+            'per_page' => 'required|integer|min:1',
+        ]);
+
+        $page = LengthAwarePaginator::resolveCurrentPage();
+
+        $perPage = 15;
+
+        if (request()->has('per_page')) {
+            $perPage = (int) request()->per_page;
+        }
+        $result = $collection->slice(($page - 1) * $perPage, $perPage);
+        $paginated = new LengthAwarePaginator($result, $collection->count(), $perPage, $page, [
+            'path' => LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+
+        $paginated->appends(request()->all());
+
+        return $paginated;
     }
 
     protected function filterData($collection, $transformer) {
