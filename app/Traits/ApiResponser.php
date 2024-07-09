@@ -20,9 +20,9 @@ trait ApiResponser {
         if ($collection->isEmpty()) {
             return $this->successResponse(['data' => $collection], $code);
         }
-
         $transformer = $collection->first()->transformer;
-        $collection  = $this->transformData($collection, $transformer);
+
+        $collection  = $this->transformData($this->sortData($this->filterData($collection, $transformer), $transformer), $transformer);
         return $this->successResponse($collection, $code);
     }
 
@@ -43,4 +43,25 @@ trait ApiResponser {
         return $transformation->toArray();
     }
 
+    protected function sortData($collection, $transformer) {
+        if (request()->has('sort_by')) {
+            $attribute = $transformer::originalAttribute(request()->sort_by);
+
+            $collection = $collection->sortBy($attribute);
+        }
+
+        return $collection;
+    }
+
+    protected function filterData($collection, $transformer) {
+        foreach (request()->query() as $query => $value) {
+            $attribute = $transformer::originalAttribute($query);
+
+            if (isset($attribute)) {
+                $collection = $collection->where($attribute, $value);
+            }
+        }
+
+        return $collection;
+    }
 }
