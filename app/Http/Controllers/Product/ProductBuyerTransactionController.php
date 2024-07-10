@@ -8,12 +8,16 @@ use App\Models\Buyer;
 use App\Models\Product;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Transformers\Transaction\TransactionTransformer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ProductBuyerTransactionController extends ApiController
 {
+    public function __constructor() {
+        $this->middleware('transform.input:'. TransactionTransformer::class)->only(['store']);
+    }
     public function store(Request $request, Product $product, Buyer $buyer)
     {
         $data = $request->validate([

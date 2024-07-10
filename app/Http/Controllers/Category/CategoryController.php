@@ -4,11 +4,14 @@ namespace App\Http\Controllers\Category;
 
 use App\Http\Controllers\ApiController;
 use App\Models\Category;
-use App\Traits\ApiResponser;
+use App\Transformers\Category\CategoryTransformer;
 use Illuminate\Http\Request;
 
 class CategoryController extends ApiController
 {
+    public function __construct() {
+        $this->middleware('transform.input:' . CategoryTransformer::class)->only(['store', 'update']);
+    }
     /**
      * Display a listing of the resource.
      */
@@ -24,6 +27,7 @@ class CategoryController extends ApiController
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'name' => 'required',
             'description' => 'required'

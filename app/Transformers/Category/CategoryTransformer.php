@@ -76,4 +76,17 @@ class CategoryTransformer extends TransformerAbstract
 
         return isset($attributes[$index]) ? $attributes[$index] : null;
     }
+
+    public static function transformAttribute($index) {
+        $attributes = [
+            'id'          => 'identifier',
+            'name'        => 'title',
+            'description' => 'details',
+            'created_at'  => 'createDate',
+            'updated_at'  => 'lastChange',
+            'deleted_at'  => 'deletedDate',
+        ];
+
+        return isset($attributes[$index]) ? $attributes[$index] : null;
+    }
 }

@@ -59,7 +59,7 @@ class TransactionTransformer extends TransformerAbstract
                 ],
                 [
                     'rel'  => 'product',
-                    'href' => route('products.show', $transaction->buyer_id),
+                    'href' => route('products.show', $transaction->product_id),
                 ],
             ]
         ];
@@ -74,6 +74,20 @@ class TransactionTransformer extends TransformerAbstract
             'createDate'  => 'created_at',
             'lastChange'  => 'updated_at',
             'deletedDate' => 'deleted_at',
+        ];
+
+        return isset($attributes[$index]) ? $attributes[$index] : null;
+    }
+
+    public static function transformAttribute($index) {
+        $attributes = [
+            'id'         => 'identifier',
+            'quantity'   => 'quantity',
+            'product_id' => 'product',
+            'buyer_id'   => 'buyer',
+            'created_at' => 'createDate',
+            'updated_at' => 'lastChange',
+            'deleted_at' => 'deletedDate',
         ];
 
         return isset($attributes[$index]) ? $attributes[$index] : null;
