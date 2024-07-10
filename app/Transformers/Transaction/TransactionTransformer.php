@@ -36,7 +36,32 @@ class TransactionTransformer extends TransformerAbstract
             'identifier' => (int) $transaction->id,
             'quantity'   => (int) $transaction->quantity,
             'product'    => (int) $transaction->product_id,
-            'buyer'      => (int) $transaction->buyer_id
+            'buyer'      => (int) $transaction->buyer_id,
+            'createDate' => (string) $transaction->created_at,
+            'lastChange' => (string) $transaction->updated_at,
+            'deletedDate' => (string) ($transaction->deleted_at ? $transaction->deleted_at : null),
+            'links' => [
+                [
+                    'rel'  => 'self',
+                    'href' => route('transactions.show', $transaction->id),
+                ],
+                [
+                    'rel'  => 'transaction.sellers',
+                    'href' => route('transactions.sellers.index', $transaction->id),
+                ],
+                [
+                    'rel'  => 'transactions.categories',
+                    'href' => route('transactions.categories.index', $transaction->id),
+                ],
+                [
+                    'rel'  => 'buyer',
+                    'href' => route('buyers.show', $transaction->buyer_id),
+                ],
+                [
+                    'rel'  => 'product',
+                    'href' => route('products.show', $transaction->buyer_id),
+                ],
+            ]
         ];
     }
 

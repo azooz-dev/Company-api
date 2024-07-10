@@ -3083,3 +3083,90 @@ Did you mean one of these?
 #41 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
 #42 {main}
 "} 
+[2024-07-10 00:04:39] local.ERROR: Command "optimzie" is not defined.
+
+Did you mean one of these?
+    optimize
+    optimize:clear {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"optimzie\" is not defined.
+
+Did you mean one of these?
+    optimize
+    optimize:clear at C:\\xampp\\htdocs\\company-api\\vendor\\symfony\\console\\Application.php:737)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\company-api\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('optimzie')
+#1 C:\\xampp\\htdocs\\company-api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\company-api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
+[2024-07-10 02:31:36] local.ERROR: syntax error, unexpected token "<<", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \"]\" at C:\\xampp\\htdocs\\company-api\\app\\Http\\Kernel.php:67)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Kernel')
+#2 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Kernel')
+#3 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Kernel')
+#4 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Kernel', Array, false)
+#5 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(297): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Kernel', Array, false)
+#6 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#7 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#8 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array, true)
+#9 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Illuminate\\\\Cont...', Array)
+#10 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#11 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\sanctum\\src\\SanctumServiceProvider.php(133): Illuminate\\Foundation\\Application->make('Illuminate\\\\Cont...')
+#12 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\sanctum\\src\\SanctumServiceProvider.php(60): Laravel\\Sanctum\\SanctumServiceProvider->configureMiddleware()
+#13 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Sanctum\\SanctumServiceProvider->boot()
+#14 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#16 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1034): Illuminate\\Container\\Container->call(Array)
+#19 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1015): Illuminate\\Foundation\\Application->bootProvider(Object(Laravel\\Sanctum\\SanctumServiceProvider))
+#20 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Laravel\\Sanctum\\SanctumServiceProvider), 16)
+#21 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1016): array_walk(Array, Object(Closure))
+#22 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#23 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(263): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#24 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(447): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#25 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#26 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2024-07-10 02:31:37] local.ERROR: syntax error, unexpected token "<<", expecting "]" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"<<\", expecting \"]\" at C:\\xampp\\htdocs\\company-api\\app\\Http\\Kernel.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-10 02:32:03] local.ERROR: Uncaught ReflectionException: Class "App\Http\Middleware\TransformInputtransformer" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\Http\\Middle...', 'handle')
+#1 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class \"App\\Http\\Middleware\\TransformInputtransformer\" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\\\Http\\\\Middle...', 'handle')
+#1 {main}
+  thrown at Command line code:1)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-10 02:32:03] local.ERROR: Uncaught ReflectionException: Class "App\Http\Middleware\TransformInputtransformer" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\Http\\Middle...', 'handle')
+#1 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class \"App\\Http\\Middleware\\TransformInputtransformer\" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\\\Http\\\\Middle...', 'handle')
+#1 {main}
+  thrown at Command line code:1)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-10 02:32:35] local.ERROR: Uncaught ReflectionException: Class "App\Http\Middleware\TransformInput:transformer" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\Http\\Middle...', 'handle')
+#1 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class \"App\\Http\\Middleware\\TransformInput:transformer\" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionMethod->__construct('App\\\\Http\\\\Middle...', 'handle')
+#1 {main}
+  thrown at Command line code:1)
+[stacktrace]
+#0 {main}
+"} 
