@@ -16,6 +16,7 @@ class SellerProductController extends ApiController
 {
     public function __constructor() {
         $this->middleware('transform.input:'. ProductTransformer::class)->only(['store', 'update']);
+        $this->middleware('auth:api')->only(['store', 'update', 'destroy']);
     }
     /**
      * Display a listing of the resource.

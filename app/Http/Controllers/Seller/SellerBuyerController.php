@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 class SellerBuyerController extends ApiController
 {
+
+    public function __construct() {
+        $this->middleware('auth:api')->only(['index']);
+    }
     /**
      * Display a listing of the resource.
      */

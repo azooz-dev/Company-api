@@ -7,6 +7,10 @@ use App\Models\Product;
 use Illuminate\Database\Eloquent\Collection;
 class ProductBuyerController extends ApiController
 {
+
+    public function __construct() {
+        $this->middleware('auth:api')->only(['index']);
+    }
     /**
      * Display a listing of the resource.
      */

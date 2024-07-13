@@ -7,6 +7,10 @@ use App\Models\Transaction;
 
 class TransactionSellerController extends ApiController
 {
+    public function __construct()
+    {
+        $this->middleware('auth:api')->only(['index']);
+    }
     /**
      * Display a listing of the resource.
      */

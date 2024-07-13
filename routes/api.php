@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Buyer\BuyerCategoryController;
 use App\Http\Controllers\Buyer\BuyerController;
 use App\Http\Controllers\Buyer\BuyerProductController;
@@ -19,12 +20,14 @@ use App\Http\Controllers\Seller\SellerCategoryController;
 use App\Http\Controllers\Seller\SellerController;
 use App\Http\Controllers\Seller\SellerProductController;
 use App\Http\Controllers\Seller\SellerTransactionController;
-use App\Http\Controllers\Transaction\BuyerTransactionController;
+use App\Http\Controllers\Transaction\TransactionBuyerController;
 use App\Http\Controllers\Transaction\TransactionCategoryController;
 use App\Http\Controllers\Transaction\TransactionController;
 use App\Http\Controllers\Transaction\TransactionSellerController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
+
+
 
 
 
@@ -69,7 +72,7 @@ Route::resource('sellers.products', SellerProductController::class)->except('cre
 | Buyer
 */
 Route::resource('buyers', BuyerController::class)->only('index', 'show');
-Route::resource('buyers.transactions', BuyerTransactionController::class)->only('index');
+Route::resource('buyers.transactions', TransactionBuyerController::class)->only('index');
 Route::resource('buyers.products', BuyerProductController::class)->only('index');
 Route::resource('buyers.sellers', BuyerSellerController::class)->only('index');
 Route::resource('buyers.categories', BuyerCategoryController::class)->only('index');
@@ -90,7 +93,7 @@ Route::resource('products', ProductController::class)->only('index', 'show');
 Route::resource('products.transactions', ProductTransactionController::class)->only('index');
 Route::resource('products.buyers', ProductBuyerController::class)->only('index');
 Route::resource('products.categories', ProductCategoryController::class)->only('index', 'update', 'destroy');
-Route::resource('products.buyers.transactions', ProductBuyerTransactionController::class)->only('store');
+Route::resource('products.buyers.transactions', ProductBuyerTransactionController::class)->only('store')->middleware('auth:api');
 
 /*
 | Transaction
@@ -105,3 +108,16 @@ Route::resource('transactions.sellers', TransactionSellerController::class)->onl
 Route::resource('users', UserController::class)->except('create', 'edit');
 Route::get('users/verify/{token}', [UserController::class, 'verify'])->name('users.verify');
 Route::get('users/{user}/resend', [UserController::class, 'resendEmail'])->name('users.resend');
+
+
+/*
+| Authentication
+*/
+Route::group([
+    'middleware' => 'api',
+], function () {
+    Route::post('login', [AuthController::class, 'login'])->name('login');
+    Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::post('refresh', [AuthController::class, 'refresh'])->name('refresh');
+    Route::post('profile', [AuthController::class, 'profile'])->name('profile');
+});

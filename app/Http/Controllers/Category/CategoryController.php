@@ -11,6 +11,7 @@ class CategoryController extends ApiController
 {
     public function __construct() {
         $this->middleware('transform.input:' . CategoryTransformer::class)->only(['store', 'update']);
+        $this->middleware('auth:api')->except(['index', 'show']);
     }
     /**
      * Display a listing of the resource.

@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class SellerController extends ApiController
 {
+
+    public function __construct()  {
+        $this->middleware('auth:api')->only(['index', 'show']);
+    }
     /**
      * Display a listing of the resource.
      */

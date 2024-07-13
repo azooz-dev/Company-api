@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Transaction;
 
 use App\Http\Controllers\ApiController;
 use App\Models\Transaction;
-use App\Traits\ApiResponser;
 
 class TransactionController extends ApiController
 {
+    public function __construct()
+    {
+        $this->middleware('auth:api')->only(['index', 'show']);
+    }
     /**
      * Display a listing of the resource.
      */
