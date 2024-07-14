@@ -46,14 +46,16 @@ class UserTransformer extends TransformerAbstract
 
     public static function originalAttribute($index) {
         $attributes = [
-            'identifier'  => 'id',
-            'name'        => 'name',
-            'email'       => 'email',
-            'isVerified'  => 'verified',
-            'isAdmin'     => 'admin',
-            'createDate'  => 'created_at',
-            'lastChange'  => 'updated_at',
-            'deletedDate' => 'deleted_at',
+            'identifier'             => 'id',
+            'name'                   => 'name',
+            'email'                  => 'email',
+            'isVerified'             => 'verified',
+            'isAdmin'                => 'admin',
+            'password'               => 'password',
+            'password_conformation'  => 'password_conformation',
+            'createDate'             => 'created_at',
+            'lastChange'             => 'updated_at',
+            'deletedDate'            => 'deleted_at',
         ];
 
         return isset($attributes[$index]) ? $attributes[$index] : null;
@@ -61,14 +63,16 @@ class UserTransformer extends TransformerAbstract
 
     public static function transformAttribute($index) {
         $attributes = [
-            'id'         => 'identifier',
-            'name'       => 'name',
-            'email'      => 'email',
-            'verified'   => 'isVerified',
-            'admin'      => 'isAdmin',
-            'created_at' => 'createDate',
-            'updated_at' => 'lastChange',
-            'deleted_at' => 'deletedDate',
+            'id'                     => 'identifier',
+            'name'                   => 'name',
+            'email'                  => 'email',
+            'verified'               => 'isVerified',
+            'admin'                  => 'isAdmin',
+            'password'               => 'password',
+            'password_conformation'  => 'password_conformation',
+            'created_at'             => 'createDate',
+            'updated_at'             => 'lastChange',
+            'deleted_at'             => 'deletedDate',
         ];
 
         return isset($attributes[$index]) ? $attributes[$index] : null;

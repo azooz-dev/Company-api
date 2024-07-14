@@ -5952,3 +5952,19 @@ Did you mean one of these?
 #33 C:\\xampp\\htdocs\\company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
 #34 {main}
 "} 
+[2024-07-13 23:38:10] local.ERROR: Uncaught ReflectionException: Class "App\Policies\BuyerPolicy" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionClass->__construct('App\\Policies\\Bu...')
+#1 [internal function]: {closure}('App\\Policies\\Bu...', 'App\\Models\\Buye...')
+#2 Command line code(1): array_map(Object(Closure), Array, Array)
+#3 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class \"App\\Policies\\BuyerPolicy\" does not exist in Command line code:1
+Stack trace:
+#0 Command line code(1): ReflectionClass->__construct('App\\\\Policies\\\\Bu...')
+#1 [internal function]: {closure}('App\\\\Policies\\\\Bu...', 'App\\\\Models\\\\Buye...')
+#2 Command line code(1): array_map(Object(Closure), Array, Array)
+#3 {main}
+  thrown at Command line code:1)
+[stacktrace]
+#0 {main}
+"} 
