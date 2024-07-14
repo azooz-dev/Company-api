@@ -7,17 +7,19 @@ use App\Models\Product;
 use App\Models\Seller;
 use App\Models\User;
 use App\Transformers\Product\ProductTransformer;
-use Illuminate\Contracts\Cache\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class SellerProductController extends ApiController
 {
-    public function __constructor() {
+    public function __construct() {
         $this->middleware('transform.input:'. ProductTransformer::class)->only(['store', 'update']);
-        $this->middleware('auth:api')->only(['store', 'update', 'destroy']);
+        $this->middleware('can:view,seller')->only('index');
+        $this->middleware('can:edit-product,seller')->only('update');
+        $this->middleware('can:delete-product,seller')->only('destroy');
     }
+
     /**
      * Display a listing of the resource.
      */
@@ -37,21 +39,23 @@ class SellerProductController extends ApiController
      */
     public function store(Request $request, User $seller)
     {
-        $data = $request->validate([
-            'name' => 'required|string',
-            'description' => 'required',
-            'quantity' => 'required|integer|min:1',
-            'image' => 'sometimes|image',
-            'status' => 'in:' . Product::AVAILABLE_PRODUCT . ',' . Product::UNAVAILABLE_PRODUCT
-        ]);
-
-        $data['seller_id'] = $seller->id;
-
-        if ($request->hasFile('image')) {
-            $data['image'] = $this->storeImage($request, $request->image, 'products');
+        if ($this->authorize('saleProduct', $seller)) {
+            $data = $request->validate([
+                'name' => 'required|string',
+                'description' => 'required',
+                'quantity' => 'required|integer|min:1',
+                'image' => 'sometimes|image',
+                'status' => 'in:' . Product::AVAILABLE_PRODUCT . ',' . Product::UNAVAILABLE_PRODUCT
+            ]);
+    
+            $data['seller_id'] = $seller->id;
+    
+            if ($request->hasFile('image')) {
+                $data['image'] = $this->storeImage($request, $request->image, 'products');
+            }
+    
+            $product = Product::create($data);
         }
-
-        $product = Product::create($data);
 
         return $this->showOne($product, 201);
     }

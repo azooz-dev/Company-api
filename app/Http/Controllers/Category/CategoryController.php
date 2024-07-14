@@ -13,6 +13,7 @@ class CategoryController extends ApiController
         $this->middleware('transform.input:' . CategoryTransformer::class)->only(['store', 'update']);
         $this->middleware('auth:api')->except(['index', 'show']);
     }
+
     /**
      * Display a listing of the resource.
      */
@@ -28,6 +29,7 @@ class CategoryController extends ApiController
      */
     public function store(Request $request)
     {
+        $this->allowedAdminActions();
         // dd($request->all());
         $request->validate([
             'name' => 'required',
@@ -52,6 +54,7 @@ class CategoryController extends ApiController
      */
     public function update(Request $request, Category $category)
     {
+        $this->allowedAdminActions();
         $category->fill($request->only([
             'name',
             'description'
@@ -69,6 +72,7 @@ class CategoryController extends ApiController
      */
     public function destroy(Category $category)
     {
+        $this->allowedAdminActions();
         $category->delete();
 
         return $this->showOne($category);

@@ -11,6 +11,7 @@ class BuyerProductController extends ApiController
 
     public function __construct() {
         $this->middleware('auth:api')->only(['index']);
+        $this->middleware('can:view,buyer')->only('index');
     }
     /**
      * Display a listing of the resource.

@@ -10,12 +10,14 @@ class TransactionController extends ApiController
     public function __construct()
     {
         $this->middleware('auth:api')->only(['index', 'show']);
+        $this->middleware('can:see,transaction')->only('show');
     }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        $this->allowedAdminActions();
         $transactions = Transaction::all();
 
         return $this->showAll($transactions, 200);

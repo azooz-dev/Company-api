@@ -9,12 +9,14 @@ class BuyerController extends ApiController
 {
     public function __construct() {
         $this->middleware('auth:api')->only(['index', 'show']);
+        $this->middleware('can:view,buyer')->only('show');
     }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        $this->allowedAdminActions();
         $buyers = Buyer::has('transactions')->get();
 
         return $this->showAll($buyers, 200);

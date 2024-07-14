@@ -9,13 +9,15 @@ class ProductBuyerController extends ApiController
 {
 
     public function __construct() {
-        $this->middleware('auth:api')->only(['index']);
+        $this->middleware('auth:api')->only('index');
+        $this->middleware('can:view,product')->only('index');
     }
     /**
      * Display a listing of the resource.
      */
     public function index(Product $product)
     {
+        $this->allowedAdminActions();
         $buyers = $product->transactions()
         ->get()
         ->map(function ($transaction) {

@@ -1,2 +1,0 @@
-<p>Thank you for create account: for confirm your account follow button below :</p>
-<button><a href="<?php echo e(route('users.verify', $user->verification_token)); ?>">Click</a></button><?php /**PATH C:\xampp\htdocs\company-api\resources\views/email/verification email.blade.php ENDPATH**/ ?>

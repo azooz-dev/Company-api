@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Product;
 use App\Http\Controllers\ApiController;
 use App\Models\Category;
 use App\Models\Product;
+use App\Transformers\Category\CategoryTransformer;
 use Illuminate\Http\Request;
 
 class ProductCategoryController extends ApiController
@@ -12,6 +13,10 @@ class ProductCategoryController extends ApiController
     public function __construct()
     {
         $this->middleware('auth:api')->except(['index']);
+        $this->middleware('transform.input:' . CategoryTransformer::class)->only(['store', 'update']);
+        $this->middleware('can:view,product')->only('index');
+        $this->middleware('can:update,product')->only('update');
+        $this->middleware('can:delete,product')->only('destroy');
     }
     /**
      * Display a listing of the resource.
