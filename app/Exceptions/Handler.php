@@ -2,17 +2,18 @@
 
 namespace App\Exceptions;
 
+use App\Exceptions\Handlers\AuthenticationExceptionHandler;
+use App\Exceptions\Handlers\AuthorizationExceptionHandler;
+use App\Exceptions\Handlers\HttpExceptionHandler;
+use App\Exceptions\Handlers\MethodNotAllowedHttpExceptionHandler;
+use App\Exceptions\Handlers\ModelNotFoundExceptionHandler;
+use App\Exceptions\Handlers\NotFoundHttpExceptionHandler;
+use App\Exceptions\Handlers\QueryExceptionHandler;
+use App\Exceptions\Handlers\ValidationExceptionHandler;
 use App\Traits\ApiResponser;
-use Illuminate\Auth\Access\AuthorizationException;
-use Illuminate\Auth\AuthenticationException;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Validation\ValidationException;
-use Symfony\Component\HttpKernel\Exception\HttpException;
-use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
+
 
 class Handler extends ExceptionHandler
 {
@@ -51,69 +52,30 @@ class Handler extends ExceptionHandler
      */
     public function register(): void
     {
-        $this->reportable(function (Throwable $e) {
-            //
-        });
-    }
+        $this->renderable(function (Throwable $exception, $request) {
+            $handlerChain = new ValidationExceptionHandler();
+            $handlerChain
+            ->setNext(new MethodNotAllowedHttpExceptionHandler())
+            ->setNext(new AuthenticationExceptionHandler())
+            ->setNext(new AuthorizationExceptionHandler())
+            ->setNext(new ModelNotFoundExceptionHandler())
+            ->setNext(new NotFoundHttpExceptionHandler())
+            ->setNext(new QueryExceptionHandler())
+            ->setNext(new HttpExceptionHandler());
 
-    /**
-     * Render an exception into an HTTP response.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Throwable  $exception
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function render($request, Throwable $exception) {
-        // Customize the validation exception response
-        if ($exception instanceof ValidationException) {
-            return $this->errorResponse($exception->errors(), 422);
-        }
+            $response = $handlerChain->handle($exception);
 
-        // Return the error response for model not found exception
-        if ($exception instanceof ModelNotFoundException) {
-            $modelName = strtolower(class_basename($exception->getModel()));
-            return $this->errorResponse("Does not exists any {$modelName} with the specified identification", 404);
-        }
-
-        // Return the error response for authentication exception
-        if ($exception instanceof AuthenticationException) {
-            return $this->errorResponse('Unauthenticated', 401);
-        }
-
-        // Return the error response for authorization exception
-        if ($exception instanceof AuthorizationException) {
-            return $this->errorResponse($exception->getMessage(), 403);
-        }
-
-        // Return the error response for not found exception
-        if ($exception instanceof NotFoundHttpException) {
-            return $this->errorResponse('The specified URL cannot be found.', 404);
-        }
-
-        // Return the error response for method not allowed exception
-        if ($exception instanceof MethodNotAllowedHttpException) {
-            return $this->errorResponse('The specified method for the request is invalid.', 405);
-        }
-
-        // Return the error response for http exception
-        if ($exception instanceof HttpException) {
-            return $this->errorResponse($exception->getMessage(), $exception->getStatusCode());
-        }
-
-        // Return the error response for query exception
-        if ($exception instanceof QueryException) {
-            $errorCode = $exception->errorInfo[1];
-            if ($errorCode == 1451) {
-                return $this->errorResponse('Cannot remove this resource permanently. It is related with any other resource.', 409);
+            if($response) {
+                return $response;
             }
-        }
 
-        // Return the default response for the exception if app is in debug mode
-        if (config('app.debug')) {
+            // Return the generic error response for other exceptions
+            if (!config('app.debug')) {
+                return $this->errorResponse('Something went wrong. Please try again later.', 500);
+            }
+            
+            // Return the default response for the exception if app is in debug mode
             return parent::render($request, $exception);
-        }
-
-        // Return the generic error response for other exceptions
-        return $this->errorResponse('Something went wrong. Please try again later.', 500);
+        });
     }
 }
