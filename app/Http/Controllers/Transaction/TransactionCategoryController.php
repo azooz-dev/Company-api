@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Transaction;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Category\CategoryResource;
 use App\Models\Transaction;
 
 class TransactionCategoryController extends ApiController
@@ -19,6 +20,7 @@ class TransactionCategoryController extends ApiController
         $this->allowedAdminActions();
         $categories = $transaction->product->categories;
 
+        $categories = CategoryResource::collection($categories);
         return $this->showAll($categories, 200);
     }
 

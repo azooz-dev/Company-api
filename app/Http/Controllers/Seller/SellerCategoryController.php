@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Category\CategoryResource;
 use App\Models\Seller;
-use Illuminate\Database\Eloquent\Collection;
 
 class SellerCategoryController extends ApiController
 {
@@ -27,8 +27,8 @@ class SellerCategoryController extends ApiController
             ->unique('id')
             ->values();
 
-        return $this->showAll(new Collection($categories), 200);
-
+        $categories = CategoryResource::collection($categories);
+        return $this->showAll($categories, 200);
     }
 
 }

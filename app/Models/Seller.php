@@ -5,14 +5,12 @@ namespace App\Models;
 use App\Models\Product;
 use App\Models\Scopes\scopes\SellerScope;
 use App\Models\User;
-use App\Transformers\Seller\SellerTransformer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
 class Seller extends User
 {
     use HasFactory;
-    public $transformer = SellerTransformer::class;
 
     protected static function boot()
     {

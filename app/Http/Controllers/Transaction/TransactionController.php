@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Transaction;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Transaction\TransactionResource;
 use App\Models\Transaction;
 
 class TransactionController extends ApiController
@@ -20,6 +21,7 @@ class TransactionController extends ApiController
         $this->allowedAdminActions();
         $transactions = Transaction::all();
 
+        $transactions = TransactionResource::collection($transactions);
         return $this->showAll($transactions, 200);
     }
 
@@ -28,7 +30,7 @@ class TransactionController extends ApiController
      */
     public function show(Transaction $transaction)
     {
+        $transaction = new TransactionResource($transaction);
         return $this->showOne($transaction, 200);
     }
-
 }

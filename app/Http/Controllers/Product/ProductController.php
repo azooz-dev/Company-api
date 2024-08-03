@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Product\ProductResource;
 use App\Models\Product;
-use App\Traits\ApiResponser;
 
 class ProductController extends ApiController
 {
@@ -19,6 +19,7 @@ class ProductController extends ApiController
     {
         $products = Product::all();
 
+        $products = ProductResource::collection($products);
         return $this->showAll($products, 200);
     }
 
@@ -27,6 +28,7 @@ class ProductController extends ApiController
      */
     public function show(Product $product)
     {
+        $product = new ProductResource($product);
         return $this->showOne($product, 200);
     }
 

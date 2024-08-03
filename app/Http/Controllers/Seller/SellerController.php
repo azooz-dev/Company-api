@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Seller\SellerResource;
 use App\Models\Seller;
-use Illuminate\Http\Request;
 
 class SellerController extends ApiController
 {
@@ -21,6 +21,7 @@ class SellerController extends ApiController
         $this->allowedAdminActions();
         $sellers = Seller::has('products')->get();
 
+        $sellers = SellerResource::collection($sellers);
         return $this->showAll($sellers, 200);
     }
 
@@ -29,6 +30,7 @@ class SellerController extends ApiController
      */
     public function show(Seller $seller)
     {
+        $seller = new SellerResource($seller);
         return $this->showOne($seller, 200);
     }
 }

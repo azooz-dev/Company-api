@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Buyer\BuyerResource;
 use App\Models\Seller;
-use Illuminate\Database\Eloquent\Collection;
 
 class SellerBuyerController extends ApiController
 {
@@ -30,7 +30,8 @@ class SellerBuyerController extends ApiController
         ->unique('id')
         ->values();
 
-        return $this->showAll(new Collection($buyers), 200);
+        $buyers = BuyerResource::collection($buyers);
+        return $this->showAll($buyers, 200);
     }
 
 }

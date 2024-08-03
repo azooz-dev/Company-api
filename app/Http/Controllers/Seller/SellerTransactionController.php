@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Transaction\TransactionResource;
 use App\Models\Seller;
-use Illuminate\Database\Eloquent\Collection;
 
 class SellerTransactionController extends ApiController
 {
@@ -25,7 +25,9 @@ class SellerTransactionController extends ApiController
         ->collapse()
         ->unique('id')
         ->values();
-        return $this->showAll(new Collection($transactions), 200);
+
+        $transactions = TransactionResource::collection($transactions);
+        return $this->showAll($transactions, 200);
     }
 
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Category\CategoryResource;
 use App\Models\Category;
 use App\Models\Product;
 use App\Transformers\Category\CategoryTransformer;
@@ -25,6 +26,7 @@ class ProductCategoryController extends ApiController
     {
         $categories = $product->categories;
 
+        $categories = CategoryResource::collection($categories);
         return $this->showAll($categories, 200);
     }
 
@@ -35,7 +37,8 @@ class ProductCategoryController extends ApiController
     {
         $product->categories()->syncWithoutDetaching([$category->id]);
 
-        return $this->showAll($product->categories, 200);
+        $categories = CategoryResource::collection($product->categories);
+        return $this->showAll($categories, 200);
     }
 
     /**
@@ -49,6 +52,7 @@ class ProductCategoryController extends ApiController
 
         $product = $product->categories()->detach([$category->id]);
 
+        $category = new CategoryResource($category);
         return $this->showOne($category);
     }
 }

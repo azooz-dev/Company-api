@@ -3,7 +3,7 @@
 namespace App\Traits;
 
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Cache;
 
@@ -12,47 +12,36 @@ trait ApiResponser {
         return response()->json($data, $code);
     }
 
-
     protected function errorResponse($message, $code) {
         return response()->json(['error' => $message], $code);
     }
 
-
-    protected function showAll(Collection $collection, $code = 200) {
+    protected function showAll(JsonResource $collection, $code = 200) {
         if ($collection->isEmpty()) {
-            return $this->successResponse(['data' => $collection], $code);
+            return $this->successResponse($collection, $code);
         }
-        $transformer = $collection->first()->transformer;
+        $transformer = get_class($collection->first());
 
-        $collection = $this->transformData($this->pagination($this->sortData($this->filterData($collection, $transformer), $transformer)), $transformer);
+        $collection = $this->pagination(new Collection($this->filterData(new Collection($this->sortData(new Collection($collection), $transformer)), $transformer)));
         $collection = $this->cacheResponse($collection);
         return $this->successResponse($collection, $code);
     }
 
-    protected function showOne(Model $instance, $code = 200) {
-        $transformer = $instance->transformer;
 
-        $instance = $this->transformData($instance, $transformer);
-        return response()->json($instance, $code);
+    protected function showOne(JsonResource $instance, $code = 200) {
+        return response()->json(['data' => $instance], $code);
     }
 
     protected function showMessage(string $message, $code = 200) {
         return $this->successResponse(['data' => $message], $code);
     }
 
-    protected function transformData($data, $transformer) {
-        $transformation = fractal($data, new $transformer);
-
-        return $transformation->toArray();
-    }
-
-    protected function sortData($collection, $transformer) {
+    protected function sortData(Collection $collection, $transformer) {
         if (request()->has('sort_by')) {
-            $attribute = $transformer::originalAttribute(request()->sort_by);
+            $attribute = $transformer::transformAttribute(request()->sort_by);
 
             $collection = $collection->sortBy($attribute);
         }
-
         return $collection;
     }
 
@@ -78,16 +67,16 @@ trait ApiResponser {
         return $paginated;
     }
 
-    protected function filterData($collection, $transformer) {
+    protected function filterData(Collection $collection, $transformer) {
+
         foreach (request()->query() as $query => $value) {
-            $attribute = $transformer::originalAttribute($query);
+            $attribute = $transformer::transformAttribute($query);
 
             if (isset($attribute)) {
                 $collection = $collection->where($attribute, $value);
             }
         }
-
-        return $collection;
+        return $collection->values();
     }
 
     protected function cacheResponse($data) {

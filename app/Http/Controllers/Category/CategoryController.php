@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Category;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Requests\Category\CategoryStoreRequest;
+use App\Http\Requests\Category\CategoryUpdateRequest;
+use App\Http\Resources\Category\CategoryResource;
 use App\Models\Category;
-use App\Transformers\Category\CategoryTransformer;
-use Illuminate\Http\Request;
 
 class CategoryController extends ApiController
 {
     public function __construct() {
-        $this->middleware('transform.input:' . CategoryTransformer::class)->only(['store', 'update']);
         $this->middleware('auth:api')->except(['index', 'show']);
     }
 
@@ -21,23 +21,21 @@ class CategoryController extends ApiController
     {
         $categories = Category::all();
 
+        $categories = CategoryResource::collection($categories);
         return $this->showAll($categories, 200);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CategoryStoreRequest $request)
     {
         $this->allowedAdminActions();
-        // dd($request->all());
-        $request->validate([
-            'name' => 'required',
-            'description' => 'required'
-        ]);
+        $request->validated();
 
-        $category = Category::create($request->only(['name', 'description']));
+        $category = Category::create($request->only(['title', 'details']));
 
+        $category = new CategoryResource($category);
         return $this->showOne($category, 201);
     }
 
@@ -46,13 +44,14 @@ class CategoryController extends ApiController
      */
     public function show(Category $category)
     {
+        $category = new CategoryResource($category);
         return $this->showOne($category, 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(CategoryUpdateRequest $request, Category $category)
     {
         $this->allowedAdminActions();
         $category->fill($request->only([
@@ -64,6 +63,8 @@ class CategoryController extends ApiController
             return $this->errorResponse('You need to specify a different value to update', 422);
         }
 
+        $category->save();
+        $category = new CategoryResource($category);
         return $this->showOne($category);
     }
 
@@ -75,6 +76,7 @@ class CategoryController extends ApiController
         $this->allowedAdminActions();
         $category->delete();
 
+        $category = new CategoryResource($category);
         return $this->showOne($category);
     }
 }

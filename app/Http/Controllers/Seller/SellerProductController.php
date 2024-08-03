@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Requests\Product\ProductStoreRequest;
+use App\Http\Requests\Product\ProductUpdateRequest;
+use App\Http\Resources\Product\ProductResource;
 use App\Models\Product;
 use App\Models\Seller;
 use App\Models\User;
@@ -31,22 +34,17 @@ class SellerProductController extends ApiController
             $product->image = $product->image ? url('storage/products/' . $product->image) : null;
         }
 
+        $products = ProductResource::collection($products);
         return $this->showAll($products, 200);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, User $seller)
+    public function store(ProductStoreRequest $request, User $seller)
     {
         if ($this->authorize('saleProduct', $seller)) {
-            $data = $request->validate([
-                'name' => 'required|string',
-                'description' => 'required',
-                'quantity' => 'required|integer|min:1',
-                'image' => 'sometimes|image',
-                'status' => 'in:' . Product::AVAILABLE_PRODUCT . ',' . Product::UNAVAILABLE_PRODUCT
-            ]);
+            $data = $request->validated();
     
             $data['seller_id'] = $seller->id;
     
@@ -57,18 +55,16 @@ class SellerProductController extends ApiController
             $product = Product::create($data);
         }
 
+        $product = new ProductResource($product);
         return $this->showOne($product, 201);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Seller $seller, Product $product)
+    public function update(ProductUpdateRequest $request, Seller $seller, Product $product)
     {
-        $request->validate([
-            'quantity' => 'integer|min:1',
-            'image' => 'image'
-        ]);
+        $request->validated();
 
         $this->checkSeller($seller, $product);
 
@@ -99,6 +95,7 @@ class SellerProductController extends ApiController
 
         $product->save();
 
+        $product = new ProductResource($product);
         return $this->showOne($product);
     }
 
@@ -114,6 +111,7 @@ class SellerProductController extends ApiController
             Storage::delete('public/products/' . $product->image);
         }
 
+        $product = new ProductResource($product);
         return $this->showOne($product);
     }
 

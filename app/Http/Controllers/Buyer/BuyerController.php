@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Buyer\BuyerResource;
 use App\Models\Buyer;
 
 class BuyerController extends ApiController
@@ -19,6 +20,8 @@ class BuyerController extends ApiController
         $this->allowedAdminActions();
         $buyers = Buyer::has('transactions')->get();
 
+        $buyers = BuyerResource::collection($buyers);
+
         return $this->showAll($buyers, 200);
     }
 
@@ -27,6 +30,7 @@ class BuyerController extends ApiController
      */
     public function show(Buyer $buyer)
     {
+        $buyer = new BuyerResource($buyer);
         return $this->showOne($buyer, 200);
     }
 }

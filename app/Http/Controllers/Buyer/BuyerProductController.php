@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Http\Controllers\ApiController;
-use \Illuminate\Database\Eloquent\Collection;
+use App\Http\Resources\Product\ProductResource;
 use App\Models\Buyer;
 
 class BuyerProductController extends ApiController
@@ -23,7 +23,9 @@ class BuyerProductController extends ApiController
             ->get()
             ->pluck('product');
 
-        return $this->showAll(new Collection($products), 200);
+        $products = ProductResource::collection($products);
+
+        return $this->showAll($products, 200);
     }
 
 }

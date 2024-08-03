@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Transaction;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Resources\Seller\SellerResource;
 use App\Models\Transaction;
 
 class TransactionSellerController extends ApiController
@@ -20,6 +21,7 @@ class TransactionSellerController extends ApiController
     {
         $seller = $transaction->product->seller;
 
+        $seller = new SellerResource($seller);
         return $this->showOne($seller, 200);
     }
 

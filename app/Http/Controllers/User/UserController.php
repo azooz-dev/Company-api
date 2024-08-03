@@ -4,10 +4,11 @@ namespace App\Http\Controllers\User;
 
 use App\Events\UserCreated;
 use App\Http\Controllers\ApiController;
+use App\Http\Requests\User\UserStoreRequest;
+use App\Http\Requests\User\UserUpdateRequest;
+use App\Http\Resources\User\UserResource;
 use App\Mail\ResendEmailVerification;
 use App\Models\User;
-use App\Transformers\User\UserTransformer;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
@@ -16,7 +17,6 @@ class UserController extends ApiController
     public function __construct()
     {
         parent::__construct();
-        $this->middleware('transform.input:' . UserTransformer::class)->only(['store', 'update']);
         $this->middleware('auth:api')->except(['store', 'verify', 'resendEmail']);
         $this->middleware('can:view,user')->only('show');
         $this->middleware('can:update,user')->only('update');
@@ -30,19 +30,16 @@ class UserController extends ApiController
         $this->allowedAdminActions();
         $users = User::all();
 
+        $users = UserResource::collection($users);
         return $this->showAll($users, 200);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(UserStoreRequest $request)
     {
-        $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:8|confirmed',
-        ]);
+        $data = $request->validated();
 
         $data['password'] = Hash::make($data['password']);
         $data['verified'] = User::UNVERIFIED_USER;
@@ -54,6 +51,7 @@ class UserController extends ApiController
 
         event(new UserCreated($user));
 
+        $user = new UserResource($user);
         return $this->showOne($user, 200);
     }
 
@@ -62,25 +60,22 @@ class UserController extends ApiController
      */
     public function show(User $user)
     {
+        $user = new UserResource($user);
         return $this->showOne($user, 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, User $user)
+    public function update(UserUpdateRequest $request, User $user)
     {
-        $data = $request->validate([
-            'email' => 'email|unique:users,email,' . $user->id,
-            'password' => 'min:8|confirmed',
-            'admin' => 'in:' . User::ADMIN_USER . ',' . User::REGULAR_USER,
-        ]);
+        $data = $request->validated();
 
         if ($request->has('name')) {
-            $user->name = $request->name;
+            $user->name = $data['name'];
         }
 
-        if ($request->has('email') && $request->email != $user->email) {
+        if ($request->has('email') && $data['email'] != $user->email) {
             $user->verified = User::UNVERIFIED_USER;
             $user->verification_token = User::generateTokenString();
             $user->email = $data['email'];
@@ -105,6 +100,7 @@ class UserController extends ApiController
 
         $user->save();
 
+        $user = new UserResource($user);
         return $this->showOne($user, 200);
 
     }
@@ -116,6 +112,7 @@ class UserController extends ApiController
     {
         $user->delete();
 
+        $user = new UserResource($user);
         return $this->showOne($user, 200);
     }
 
