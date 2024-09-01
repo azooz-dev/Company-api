@@ -19912,3 +19912,1194 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-08-03 05:22:28] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-03 05:22:28] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-28 12:52:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-28 13:02:11] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-28 13:02:11] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-28 13:02:38] local.ERROR: Method [getFactory] does not exist. {"userId":5,"exception":"[object] (BadMethodCallException(code: 0): Method [getFactory] does not exist. at C:\\xampp\\htdocs\\Company-api\\vendor\\tymon\\jwt-auth\\src\\JWTGuard.php:437)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Controllers\\Auth\\AuthController.php(80): Tymon\\JWTAuth\\JWTGuard->__call('getFactory', Array)
+#1 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Controllers\\Auth\\AuthController.php(33): App\\Http\\Controllers\\Auth\\AuthController->respondWithToken('eyJ0eXAiOiJKV1Q...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Auth\\AuthController->login()
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('login', Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Auth\\AuthController), 'login')
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Middleware\\SignatureMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\SignatureMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'X-Application-N...')
+#16 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\Company-api\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#42 {main}
+"} 
+[2024-08-28 13:02:51] local.ERROR: Method [getFactory] does not exist. {"userId":5,"exception":"[object] (BadMethodCallException(code: 0): Method [getFactory] does not exist. at C:\\xampp\\htdocs\\Company-api\\vendor\\tymon\\jwt-auth\\src\\JWTGuard.php:437)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Controllers\\Auth\\AuthController.php(80): Tymon\\JWTAuth\\JWTGuard->__call('getFactory', Array)
+#1 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Controllers\\Auth\\AuthController.php(33): App\\Http\\Controllers\\Auth\\AuthController->respondWithToken('eyJ0eXAiOiJKV1Q...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Auth\\AuthController->login()
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('login', Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Auth\\AuthController), 'login')
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\xampp\\htdocs\\Company-api\\app\\Http\\Middleware\\SignatureMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\SignatureMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'X-Application-N...')
+#16 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\Company-api\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#42 {main}
+"} 
+[2024-08-28 13:12:11] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-28 13:12:11] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 21:51:48] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:01:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:01:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:11:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:11:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:21:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:21:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:31:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:31:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:41:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:41:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:51:35] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 22:51:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:01:35] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:01:36] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:13:13] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:13:13] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:23:12] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:24:11] local.ERROR: syntax error, unexpected token "protected", expecting "," or ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"protected\", expecting \",\" or \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:22)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:24:11] local.ERROR: syntax error, unexpected token "protected", expecting "," or ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"protected\", expecting \",\" or \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:22)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:25:11] local.ERROR: Command class "App\Console\Commands\MakeRepositoryInterface" is not correctly initialized. You probably forgot to call the parent constructor. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\LogicException(code: 0): Command class \"App\\Console\\Commands\\MakeRepositoryInterface\" is not correctly initialized. You probably forgot to call the parent constructor. at C:\\xampp\\htdocs\\Company-api\\vendor\\symfony\\console\\Command\\Command.php:449)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\symfony\\console\\Command\\Command.php(436): Symfony\\Component\\Console\\Command\\Command->getNativeDefinition()
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\symfony\\console\\Application.php(560): Symfony\\Component\\Console\\Command\\Command->getDefinition()
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(228): Symfony\\Component\\Console\\Application->add(Object(App\\Console\\Commands\\MakeRepositoryInterface))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(217): Illuminate\\Console\\Application->addToParent(Object(App\\Console\\Commands\\MakeRepositoryInterface))
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(251): Illuminate\\Console\\Application->add(Object(App\\Console\\Commands\\MakeRepositoryInterface))
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(349): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(130): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#7 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(77): Illuminate\\Console\\Application->bootstrap()
+#8 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(481): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '10.48.16')
+#9 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2024-08-31 23:26:11] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:37)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:26:11] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:37)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:33:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:46)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:33:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:46)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:33:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:46)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:33:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:46)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:33:12] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:37:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:37:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepositoryInterface.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:40:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:28)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:40:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:28)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:43:12] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:43:12] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:50:11] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:39)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:52:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:47)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:52:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:47)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:53:11] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:53:11] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:53:11] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(102): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(908): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(961): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(946): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\xampp\htdocs\Company-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(120): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(102): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(961): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(946): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(120): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-08-31 23:53:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:54:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:54:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:55:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:55:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:56:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:56:12] local.ERROR: syntax error, unexpected token "<<", expecting ";" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"<<\", expecting \";\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:57:12] local.ERROR: Unclosed '{' on line 53 {"exception":"[object] (ParseError(code: 0): Unclosed '{' on line 53 at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:57)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:57:12] local.ERROR: Unclosed '{' on line 53 {"exception":"[object] (ParseError(code: 0): Unclosed '{' on line 53 at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:57)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:58:12] local.ERROR: Unclosed '{' on line 53 {"exception":"[object] (ParseError(code: 0): Unclosed '{' on line 53 at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:62)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-31 23:58:12] local.ERROR: Unclosed '{' on line 53 {"exception":"[object] (ParseError(code: 0): Unclosed '{' on line 53 at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:62)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-09-01 00:00:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-09-01 00:00:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"}\" at C:\\xampp\\htdocs\\Company-api\\app\\Console\\Commands\\MakeRepository.php:54)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Company-api\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Console\\\\Com...')
+#2 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(346): is_subclass_of('App\\\\Console\\\\Com...', 'Illuminate\\\\Cons...')
+#3 C:\\xampp\\htdocs\\Company-api\\app\\Console\\Kernel.php(23): Illuminate\\Foundation\\Console\\Kernel->load(Array)
+#4 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#5 C:\\xampp\\htdocs\\Company-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 

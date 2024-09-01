@@ -9,15 +9,12 @@ use App\Http\Resources\Product\ProductResource;
 use App\Models\Product;
 use App\Models\Seller;
 use App\Models\User;
-use App\Transformers\Product\ProductTransformer;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class SellerProductController extends ApiController
 {
     public function __construct() {
-        $this->middleware('transform.input:'. ProductTransformer::class)->only(['store', 'update']);
         $this->middleware('can:view,seller')->only('index');
         $this->middleware('can:edit-product,seller')->only('update');
         $this->middleware('can:delete-product,seller')->only('destroy');

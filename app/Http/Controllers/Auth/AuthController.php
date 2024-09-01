@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\ApiController;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends ApiController
 {
@@ -61,7 +62,7 @@ class AuthController extends ApiController
      */
     public function refresh()
     {
-        return $this->respondWithToken(auth()->refresh());
+        return $this->respondWithToken(Auth::refresh(), true);
     }
 
     /**
@@ -71,12 +72,14 @@ class AuthController extends ApiController
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function respondWithToken($token)
+    protected function respondWithToken($token, $isRefresh = null)
     {
+        $expireIn = $isRefresh ? config('jwt.refresh_ttl') * 60 : config('jwt.ttl') * 60;
+
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth('api')->factory()->getTTL() * 60
+            'expires_in' => $expireIn
         ]);
     }
 }
